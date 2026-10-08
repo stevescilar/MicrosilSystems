@@ -58,10 +58,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/brand/micro.png", sizes: "186x185", type: "image/png" },
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
       { url: "/brand/LOGO- microsil-for favicon.png", sizes: "719x719", type: "image/png" },
     ],
     apple: [
+      { url: "/apple-icon.png" },
       { url: "/brand/LOGO- microsil-for favicon.png", sizes: "180x180", type: "image/png" },
     ],
   },
