@@ -40,6 +40,7 @@ export function Navbar({ onOpenEstimator }: NavbarProps) {
                 src="/brand/MIcrosil Logo_.png"
                 alt="Microsil System Logo"
                 fill
+                sizes="(max-width: 640px) 176px, 192px"
                 priority
                 className="object-contain object-left"
               />

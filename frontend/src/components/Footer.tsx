@@ -21,6 +21,7 @@ export function Footer() {
                 src="/brand/MIcrosil Logo_.png"
                 alt="Microsil System Logo"
                 fill
+                sizes="192px"
                 className="object-contain object-left brightness-200"
               />
             </div>

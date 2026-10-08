@@ -91,14 +91,21 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-[#89D9A4] selection:text-[#1E283A]">
+      <body
+        className="min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-[#89D9A4] selection:text-[#1E283A]"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
