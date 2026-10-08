@@ -50,3 +50,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
+cpanel_deploy/
+package_cpanel.py
+prepare_cpanel_upload.ps1
