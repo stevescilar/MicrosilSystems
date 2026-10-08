@@ -27,11 +27,20 @@
                     <p class="text-[11px] text-[#89D9A4] font-medium">Operations &amp; Lead Management Hub</p>
                 </div>
             </div>
-            <div class="flex items-center gap-4 text-xs">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white border border-white/10">
+            <div class="flex items-center gap-3 text-xs">
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white border border-white/10">
                     <span class="w-2 h-2 rounded-full bg-[#03A63D] animate-pulse"></span>
                     API Active &bull; Laravel 11/Herd
                 </span>
+                <div class="flex items-center gap-2 pl-2 border-l border-white/20">
+                    <span class="text-white/80 font-medium hidden md:inline">{{ Auth::user()->name ?? 'Administrator' }}</span>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="px-2.5 py-1 rounded-lg bg-red-500/20 hover:bg-red-500/30 text-red-200 border border-red-500/30 font-semibold transition-colors cursor-pointer">
+                            Sign Out
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>

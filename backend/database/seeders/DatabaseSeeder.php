@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // 1. Admin User
-        User::firstOrCreate(
+        User::updateOrCreate(
             ['email' => 'solutions@microsilsystem.co.ke'],
             [
                 'name' => 'Microsil Administrator',
