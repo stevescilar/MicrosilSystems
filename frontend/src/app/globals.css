@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+
+  /* Microsil Brand Official Palette */
+  --brand-navy: #2F3D58;
+  --brand-navy-dark: #1E283A;
+  --brand-navy-light: #445475;
+  --brand-green: #03A63D;
+  --brand-green-hover: #028A32;
+  --brand-forest: #33A65B;
+  --brand-mint: #89D9A4;
+  --brand-tint: #EEFFF8;
+  --brand-surface: #ffffff;
+  --brand-border: #e2e8f0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-dark: var(--brand-navy-dark);
+  --color-brand-navy-light: var(--brand-navy-light);
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-hover: var(--brand-green-hover);
+  --color-brand-forest: var(--brand-forest);
+  --color-brand-mint: var(--brand-mint);
+  --color-brand-tint: var(--brand-tint);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-border: var(--brand-border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #89D9A4;
+  selection-color: #1E283A;
+}
+
+/* Custom subtle patterns & gradients */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(47, 61, 88, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(47, 61, 88, 0.05) 1px, transparent 1px);
+}
+
+.glow-brand-green {
+  box-shadow: 0 0 50px -10px rgba(3, 166, 61, 0.3);
+}
+
+.glow-brand-mint {
+  box-shadow: 0 0 40px -10px rgba(137, 217, 164, 0.4);
+}
